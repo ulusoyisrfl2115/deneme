@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+#welcome-sec{
+    background-image: url(image/main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 70px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav{
+    display: flex;
+    gap: 40px;
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav a:hover{
+    color: black;
+    text-shadow: 2px 2px 30px white;
+    transition: all 0.5s;
+}
+
+header img{
+    width: 150px;
+}
+
+section{
+    height: 100vh;
+    
+}
+
+.welcome-text{
+    width: 90vh;
+    margin: 135px auto;
+}
+
+.welcome-text h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+.welcome-text p{
+    font-size: 22px;
+    max-width: 700px;
+    text-align: center;
+    margin: 100px auto;
+}
+/*THE PART OF ABOUT*/
+
+#about{
+    background-color: black;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.about-text{
+    max-width: 600px;
+}
+
+.about-text h1{
+    font-size: 75px;
+    line-height: 80px;
+    font-weight: 600;
+}
+
+.about-text p{
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+
+.about-text p span{
+    border-bottom: 1px solid red;
+}
+
+#about img{
+    max-width: 600px;
+    max-height: 600px;
+}
+
+
+
+/* THE PART OF BATTLE */
+
+  #battle{
+    background-image:  radial-gradient(rgba(0, 0, 0, 0.231) 0%, black 60%), url(image/sec-2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+.heading{
+    padding-top: 10px;    
+}
+
+.heading h5{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+.heading h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.boxes{
+    width: 620px;
+    height: 500px;
+    margin: 32px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 300px;
+    height: 130px;
+    padding: 10px;
+    display: flex;
+    border: 1px solid white;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+.box h1{
+    color: crimson;
+}
+
+.box p{
+    font-size: 15px;
+}
+.box:last-child{
+    width: 600px;
+}
+
+/* COMMENTS PART */
+
+#opinions{
+    background-image:  url(image/sec-3.png);
+    background-size: 120vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;    
+}
+
+.opin-text{        
+    max-width: 470px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;   
+}
+
+.opin-text p{
+    font-size: 19px;
+}
+
+.opin-text h1{
+    font-size: 70px;
+}
+
+.opin-text button{
+    padding: 10px;
+    background-color: red;
+    font-weight: 600;
+    transition: color 0.4s, background-color 0.4s;
+    border-radius: 5px;
+    margin-top: 35px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.opin-text button:hover{
+    background-color: black;
+    color: red;
+    transition: all 0.5s;
+}
+
+.cards{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    justify-content: center;
+    margin-right: 50px;
+    
+}
+
+.card{
+    width: 450px;
+    background-color: rgb(55, 55, 55);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card:nth-child(2){
+    align-self: flex-start;
+}
+
+.user{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-info h1{
+    color: crimson;
+}
+
+.gray{
+    color: gray;
+}
+
+@media (max-width: 1100px) {
+    #about {
+      flex-direction: column;
+      gap: 50px;
+    }
+    .about-text h1 {
+      font-size: 40px;
+    }
+    .about-text p {
+      margin-top: 20px;
+    }
+    #about img {
+      width: 350px;
+    }
+    #opinions {
+      flex-direction: column;
+    }
+    .opinions-text {
+      margin: 0 auto;
+    }
+    .cards {
+      gap: 10px;
+      margin: 0 auto;
+    }
+  }
+
+
+
+
+
